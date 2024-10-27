@@ -1,0 +1,111 @@
+{
+    "nota_fiscal": {
+      "numero": "123456789",
+      "serie": "1",
+      "data_emissao": "2024-10-16T13:27:00",
+      "chave_acesso": "12345678901234567890123456789012345678901234",
+      "modelo": "55",
+      "natureza_operacao": "Venda de mercadoria",
+      "tipo_emissao": "Normal",
+      "finalidade_emissao": "Venda",
+      "arquivo_danfe": "ADD HERE: purchase_file"
+    },
+    "comprador": {
+      "nome": "João da Silva",
+      "cpf": "123.456.789-00",
+      "endereco": {
+        "logradouro": "Rua das Flores",
+        "numero": "123",
+        "complemento": "Apto 203",
+        "bairro": "Centro",
+        "cidade": "São Paulo",
+        "uf": "SP",
+        "cep": "01001-000"
+      },
+      "email": "<>ADD HERE: customer email",
+      "telefone": "(11) 9xxxx-4321"
+    },
+    "vendedor": {
+      "nome": "R&R Eletrônicos LTDA",
+      "cnpj": "XX.XXX.XXX/0001-99",
+      "inscricao_estadual": "XXX.XXX.XXX.112",
+      "endereco": {
+        "logradouro": "Avenida Paulista",
+        "numero": "XXXX",
+        "complemento": "Sala 101",
+        "bairro": "Bela Vista",
+        "cidade": "São Paulo",
+        "uf": "SP",
+        "cep": "01310-100"
+      },
+      "telefone": "(11) XXXX XXXX",
+      "email": "contato@rereletronicos.com.br"
+    },
+    "produtos": [
+      {
+        "descricao": "Smartphone Moto G33",
+        "codigo_produto": "SMTG33-BLK",
+        "ncm": "8517.12.31",
+        "cest": "21.001.00",
+        "quantidade": 1,
+        "unidade": "UN",
+        "valor_unitario": 1959.90,
+        "valor_total": 1959.90,
+        "icms": {
+          "cst": "00",
+          "aliquota": 18,
+          "valor_icms": 352.78
+        },
+        "ipi": {
+          "cst": "50",
+          "aliquota": 5,
+          "valor_ipi": 97.99
+        },
+        "pis": {
+          "cst": "01",
+          "aliquota": 1.65,
+          "valor_pis": 32.34
+        },
+        "cofins": {
+          "cst": "01",
+          "aliquota": 7.6,
+          "valor_cofins": 148.95
+        }
+      }
+    ],
+    "pagamento": {
+      "forma": "Cartão de Crédito",
+      "valor_total": 1959.90,
+      "numero_parcelas": 3,
+      "valor_parcela": 653.30,
+      "bandeira_cartao": "Visa",
+      "cartao_mascarado": "XXXX XXXX XXXX 1234",
+      "status": "Aprovado",
+      "autorizacao": "87654321"
+    },
+    "entrega": {
+      "data_prevista": "2024-10-20",
+      "endereco_entrega": {
+        "logradouro": "Rua das Flores",
+        "numero": "XXX",
+        "complemento": "Apto 203",
+        "bairro": "Centro",
+        "cidade": "São Paulo",
+        "uf": "SP",
+        "cep": "01001-000"
+      }
+    },
+    "totais": {
+      "valor_total_produtos": 1959.90,
+      "valor_frete": 0.00,
+      "valor_seguro": 0.00,
+      "valor_outros": 0.00,
+      "valor_total_nota": 1959.90,
+      "base_calculo_icms": 1959.90,
+      "valor_icms": 352.78,
+      "valor_ipi": 97.99,
+      "valor_pis": 32.34,
+      "valor_cofins": 148.95
+    }
+  }
+  

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>R&R Eletrônicos</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f7f7f7; margin: 0; padding: 20px; text-align: center;">
+    <div class="header" style="background-color: #ffffff; padding: 10px; text-align: center; border-bottom: 2px solid #ccc; display: flex; align-items: center; justify-content: center; height: 80px;">
+        <img src="https://img.freepik.com/vetores-gratis/ilustracao-de-compartilhar-icone_53876-5843.jpg" alt="Logo R&R Eletrônicos" style="max-width: 150px; max-height: 70px; margin-right: 10px;">
+        <h1 style="margin: 0;">R&R Eletrônicos</h1>
+    </div>
+    <div class="container" style="background-color: #ffffff; padding: 20px; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); margin: 20px 0; display: inline-block; text-align: center;">
+        <div style="display: inline-flex; align-items: center;">
+            <p style="font-size: 15px; margin: 0;">Prezado(a)</p>
+            <p style="font-size: 24px; font-weight: bold; margin-left: 5px;">{nome},</p>
+        </div>        
+        <div style="font-size: 15;">
+            <p>Obrigado pela preferência!</p>
+            <p>Seguem os detalhes da sua compra realizada com sucesso:</p>
+        </div>
+        <div class="card" style="background-color: #ffffff; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); padding: 15px; margin: 15px 0;">
+            <h3 style="color: #333;">Informações da Nota Fiscal</h3>
+            <ul style="list-style-type: none; padding: 0;">
+                <li style="margin-bottom: 8px;"><strong>Número da Nota Fiscal:</strong> {numero_nota}</li>
+                <li style="margin-bottom: 8px;"><strong>Série:</strong> {serie}</li>
+                <li style="margin-bottom: 8px;"><strong>Data de Emissão:</strong> {data_emissao}</li>
+            </ul>
+        </div>
+
+        <div class="card" style="background-color: #ffffff; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); padding: 15px; margin: 15px 0;">
+            <h3 style="color: #333;">Detalhes da Compra</h3>
+            <ul style="list-style-type: none; padding: 0;">
+                <li style="margin-bottom: 8px;"><strong>Produto:</strong> {descricao_produto}</li>
+                <li style="margin-bottom: 8px;"><strong>Quantidade:</strong> {quantidade}</li>
+                <li style="margin-bottom: 8px;"><strong>Valor Unitário:</strong> R$ {valor_unitario:.2f}</li>
+                <li style="margin-bottom: 8px;"><strong>Valor Total:</strong> R$ {valor_total:.2f}</li>
+            </ul>
+        </div>
+
+        <div class="card" style="background-color: #ffffff; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); padding: 15px; margin: 15px 0;">
+            <h3 style="color: #333;">Informações de Pagamento</h3>
+            <ul style="list-style-type: none; padding: 0;">
+                <li style="margin-bottom: 8px;"><strong>Forma de Pagamento:</strong> {forma_pagamento}</li>
+                <li style="margin-bottom: 8px;"><strong>Valor Total:</strong> R$ {valor_pagamento:.2f}</li>
+                <li style="margin-bottom: 8px;"><strong>Número de Parcelas:</strong> {numero_parcelas}</li>
+                <li style="margin-bottom: 8px;"><strong>Valor da Parcela:</strong> R$ {valor_parcela:.2f}</li>
+                <li style="margin-bottom: 8px;"><strong>Bandeira do Cartão:</strong> {bandeira_cartao}</li>
+                <li style="margin-bottom: 8px;"><strong>Cartão Utilizado:</strong> {cartao_mascarado}</li>
+                <li style="margin-bottom: 8px;"><strong>Status do Pagamento:</strong> {status_pagamento}</li>
+            </ul>
+        </div>
+
+        <div class="card" style="background-color: #ffffff; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); padding: 15px; margin: 15px 0;">
+            <h3 style="color: #333;">Informações de Entrega</h3>
+            <ul style="list-style-type: none; padding: 0;">
+                <li style="margin-bottom: 8px;"><strong>Data Prevista para Entrega:</strong> {data_entrega}</li>
+                <li style="margin-bottom: 8px;"><strong>Endereço de Entrega:</strong> {endereco_entrega}</li>
+            </ul>
+        </div>
+
+        <h3 style="color: #333;">Você pode gostar</h3>
+        <div class="suggestions" style="margin-top: 30px; text-align: center; display: flex; justify-content: center; flex-wrap: wrap;">
+            <div class="suggestion-item" style="background-color: #ffffff; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); width: 220px; margin: 10px; text-align: center; padding: 10px;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZOVSqawOe0a6hcmxMJcYNwIBetDf_kRdoyw&s" alt="Headphone JBL" style="width: 100%; max-height: 120px; object-fit: contain; border-radius: 5px;">
+                <h2 class="suggestion-text" style="margin-top: 10px; font-weight: bold; color: #4a4a4a;">Headphone JBL</h2>
+                <h3 class="installments" style="font-size: 12px; color: #777;">12x s/juros</h3>
+                <p class="installments" style="font-size: 12px; color: #777;">Frete Grátis</p>
+                <h1 style="color: #21739f;">R$3.799.90</h1>
+            </div>
+            <div class="suggestion-item" style="background-color: #ffffff; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); width: 220px; margin: 10px; text-align: center; padding: 10px;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_gGM6K6zY9ew6vXMdYW8U29esDiIebckqhQ&s" alt="Notebook Lenovo" style="width: 100%; max-height: 120px; object-fit: contain; border-radius: 5px;">
+                <h2 class="suggestion-text" style="margin-top: 10px; font-weight: bold; color: #4a4a4a;">Notebook Lenovo</h2>
+                <h3 class="installments" style="font-size: 12px; color: #777;">12x s/juros</h3>
+                <p class="installments" style="font-size: 12px; color: #777;">Frete Grátis</p>
+                <h1 style="color: #21739f;">R$3.799.90</h1>
+            </div>
+        </div>
+    </div>
+    <div class="footer" style="margin-top: 20px; font-size: 12px; color: #666;">
+        <p>R&R Eletrônicos - A sua loja de eletrônicos de confiança.</p>
+        <p>Política de Troca: Aceitamos trocas em até 7 dias após o recebimento do produto, conforme o Código de Defesa do Consumidor.</p>
+        <p>Para devoluções, os produtos devem estar em sua embalagem original.</p>
+    </div>
+</body>
+</html>

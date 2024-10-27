@@ -1,0 +1,11 @@
+email_config:
+  recipient: "<ADD HERE: recipient_email>"
+  subject: "Confirmação de Compra"
+  attachment: "data/danfe_model.pdf"
+  purchase_data: "<ADD HERE: purchase_file>"
+  email_template: "template/email_template.html"
+  smtp:
+    sender: "<ADD HERE: sender_email>"
+    password: "<ADD HERE: sender_password>"
+    server: "smtp.<YOUR ENAIL SERVER>"
+    port: <EMAIL SERVER PORT - EXAMPLE: 587>
